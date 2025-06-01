@@ -23,3 +23,4 @@ def ping():
     host = request.args.get('host', '')
     response = os.popen(f"ping -c 1 {host}").read()
     return response
+
